@@ -1,0 +1,110 @@
+.Resume {
+  &-Name {
+    color: $base-color;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &-Details {
+    margin-top: 42px;
+    display: flex;
+    gap: 260px;
+
+    &-Title {
+      color: $base-color;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    &-Bullet_Points {
+      color: $base-color;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 40px;
+
+      display: flex;
+      &:first-of-type {
+        margin-top: 8px;
+      }
+    }
+
+    &-Description {
+      color: $base-color;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 26px;
+
+      &:first-of-type {
+        margin-top: 24px;
+      }
+    }
+
+    &-Years {
+      color: $base-color;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 30px;
+    }
+
+    &-Education {
+      &-Details {
+        margin-top: 24px;
+
+        &-Place {
+          color: $base-color;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 25px;
+        }
+
+        &-University {
+          color: $base-color;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25px;
+        }
+
+        &-Faculty {
+          margin-left: 18px;
+          margin-top: 8px;
+
+          li {
+            color: $base-color;
+
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+          }
+        }
+      }
+    }
+
+    &-Experience {
+      &-Details {
+        margin-top: 24px;
+      }
+    }
+
+    &-Left {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+
+    &-Right {
+      display: flex;
+      flex-direction: column;
+      gap: 120px;
+    }
+  }
+}

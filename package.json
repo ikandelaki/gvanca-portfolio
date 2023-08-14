@@ -16,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier --log-level warn --write \"{src/components,src/routes}/**/*.{jsx,js,scss}\""
   },
   "eslintConfig": {
     "extends": [
@@ -38,6 +39,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "prettier": "3.0.1",
     "sass": "^1.65.1"
   }
 }

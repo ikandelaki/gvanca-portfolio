@@ -1,16 +1,16 @@
 .ProjectBanner {
-    background-color: $base-color;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    margin-top: 60px;
+  background-color: $base-color;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
 
-    &-Title {
-        color: #FFF;
-        font-family: Inter;
-        font-size: 70px;
-        font-style: normal;
-        font-weight: 200;
-        margin-left: 20px;
-    }
+  &-Title {
+    color: #fff;
+    font-family: Inter;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 200;
+    margin-left: 20px;
+  }
 }

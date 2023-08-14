@@ -1,0 +1,13 @@
+// variables
+@import 'utils/_variables.scss';
+
+// component styles
+@import 'components/App/App.scss';
+@import 'components/Header/Header.scss';
+@import 'components/Hero/Hero.scss';
+@import 'components/ProgressBar/ProgressBar.scss';
+@import 'components/ProjectBanner/ProjectBanner.scss';
+@import 'components/Project/Project.scss';
+
+// route styles
+@import 'routes/Home/Home.scss';

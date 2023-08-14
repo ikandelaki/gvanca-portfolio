@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Recreation of Instagram",
+        "description": "I embarked on the recreation of the Instagram app using Figma, driven by a sincere commitment to advancing my proficiency in UI/UX design. By meticulously dissecting and reconstructing the intricacies of this renowned application, I obtained practical insights into optimizing user interfaces and streamlining user experiences. This undertaking reflects my resolute dedication to continuous learning and the earnest application of acquired skills in the realm of contemporary app design.",
+        "thumbnail": "instagram-1.png",
+        "images": [
+            "instagram-1.png",
+            "instagram-2.png",
+            "instagram-3.png",
+            "instagram-4.png"
+        ],
+        "isSlider": false,
+        "link": ""
+    },
+    {
+        "name": "Clothing Brand",
+        "description": "The genesis of the Luxurious Clothing Website stems from a deep-rooted affinity for the fashion industry, a sense of personal connection, and a profound appreciation for minimalist aesthetics. Motivated by these factors, I embarked on a creative journey to bring my passions to life in a digital space.",
+        "thumbnail": "clothing-1.png",
+        "images": [
+            "clothing-1.png"
+        ],
+        "isSlider": true,
+        "link": ""
+    },
+    {
+        "name": "Wendy’s X Dunkin",
+        "description": "I ventured to create transformative applications for two iconic brands: Wendy's and Dunkin'. Driven by a passion for technology and a resolute commitment to enhancing customer experiences, I meticulously designed intuitive interfaces that offer a host of features. Users can now seamlessly personalize their orders, accrue rewards, and navigate transactions with unprecedented ease.",
+        "thumbnail": "dunkin-1.png",
+        "images": [
+            "dunkin-1.png",
+            "dunkin-2.png",
+            "dunkin-3.png",
+            "dunkin-4.png"
+        ],
+        "isSlider": false,
+        "link": ""
+    }
+]

@@ -1,0 +1,33 @@
+.Hero {
+    width: 100%;
+    
+    &-Heading {
+        &-Title {
+            color: #10272F;
+            font-family: Inter;
+            font-size: 70px;
+            font-style: normal;
+            font-weight: 200;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        &-Description {
+            color: #10272F;
+            font-family: Inter;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 100;
+            line-height: 1.2;
+            letter-spacing: -0.6px;
+            margin-top: 24px;
+        }
+    }
+
+    &-Projects {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 165px;        
+    }
+}

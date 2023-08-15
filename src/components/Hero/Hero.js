@@ -17,10 +17,12 @@ function Hero() {
   }
 
   function renderProjects() {
+    const projects = Object.values(projectData);
+
     return (
       <div className="Hero-Projects">
-        {projectData.map((data) => (
-          <Project {...data} />
+        {projects.map((data) => (
+          <Project {...data} key={data.id} />
         ))}
       </div>
     );

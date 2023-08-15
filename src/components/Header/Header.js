@@ -1,11 +1,15 @@
 import LogoSpark from "../../icons/logo-spark.svg";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { RouteContext } from "../App/App";
 
 function Header() {
+  const { route, setRoute } = useContext(RouteContext);
+
   function renderLogo() {
     return (
       <div className="Header-Logo">
-        <Link to="/">
+        <Link to="/" onClick={() => setRoute('/')}>
           <span>GV</span>
           <span>ANCA</span>
           <img src={LogoSpark} alt="logo" />
@@ -18,9 +22,27 @@ function Header() {
     return (
       <div className="Header-Nav">
         <div className="Header-Nav-Links">
-          <Link to="/resume">Resume</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/Projects">Projects</Link>
+          <Link 
+            to="/resume" 
+            className={`${route === 'resume' ? 'active' : null}`}
+            onClick={() => setRoute('resume')}
+          >
+            Resume
+          </Link>
+          <Link 
+            to="/contact" 
+            className={`${route === 'contact' ? 'active' : null}`}
+            onClick={() => setRoute('contact')}
+          >
+            Contact
+          </Link>
+          <Link 
+            to="/projects" 
+            className={`${route === 'projects' ? 'active' : null}`}
+            onClick={() => setRoute('projects')}
+          >
+            Projects
+          </Link>
         </div>
         {renderModeButton()}
       </div>

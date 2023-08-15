@@ -52,6 +52,18 @@
         transition: all 0.3s;
         overflow: hidden;
 
+        &.active {
+          text-shadow:
+          -0.1px -0.1px 0 #10272f,
+          0.1px -0.1px 0 #10272f,
+          -0.1px 0.1px 0 #10272f,
+          0.1px 0.1px 0 #10272f;
+          -webkit-transition: all .5s;
+          -moz-transition: all .5s;
+          -o-transition: all .5s;
+          transition: all .5s;
+        }
+
         &::after {
           content: "";
           display: block;

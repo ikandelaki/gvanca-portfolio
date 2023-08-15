@@ -1,5 +1,6 @@
-[
-    {
+{
+    "instagram": {
+        "id": "instagram",
         "name": "Recreation of Instagram",
         "description": "I embarked on the recreation of the Instagram app using Figma, driven by a sincere commitment to advancing my proficiency in UI/UX design. By meticulously dissecting and reconstructing the intricacies of this renowned application, I obtained practical insights into optimizing user interfaces and streamlining user experiences. This undertaking reflects my resolute dedication to continuous learning and the earnest application of acquired skills in the realm of contemporary app design.",
         "thumbnail": "instagram-1.png",
@@ -10,9 +11,15 @@
             "instagram-4.png"
         ],
         "isSlider": false,
+        "paragraphs": {
+            "goal": "I embarked on the recreation of the Instagram app using Figma, driven by a sincere commitment to advancing my proficiency in UI/UX design. By meticulously dissecting and reconstructing the intricacies of this renowned application, I obtained practical insights into optimizing user interfaces and streamlining user experiences. This undertaking reflects my resolute dedication to continuous learning and the earnest application of acquired skills in the realm of contemporary app design.",
+            "milestones": "Developing this app was a true challenge, and I'm especially proud of handcrafting a customized chat theme. The learning process was invaluable, and I believe the end result reflects my commitment to a polished user experience. Overcoming these challenges has significantly contributed to my growth as a developer, and I look forward to sharing my journey to inspire others in the community. Embracing obstacles as opportunities, I'm excited to continue advancing in my app development journey.",
+            "empty": ""
+        },
         "link": ""
     },
-    {
+    "clothing-brand": {
+        "id": "clothing-brand",
         "name": "Clothing Brand",
         "description": "The genesis of the Luxurious Clothing Website stems from a deep-rooted affinity for the fashion industry, a sense of personal connection, and a profound appreciation for minimalist aesthetics. Motivated by these factors, I embarked on a creative journey to bring my passions to life in a digital space.",
         "thumbnail": "clothing-1.png",
@@ -22,7 +29,8 @@
         "isSlider": true,
         "link": ""
     },
-    {
+    "wendys-dunkin": {
+        "id": "wendys-dunkin",
         "name": "Wendy’s X Dunkin",
         "description": "I ventured to create transformative applications for two iconic brands: Wendy's and Dunkin'. Driven by a passion for technology and a resolute commitment to enhancing customer experiences, I meticulously designed intuitive interfaces that offer a host of features. Users can now seamlessly personalize their orders, accrue rewards, and navigate transactions with unprecedented ease.",
         "thumbnail": "dunkin-1.png",
@@ -35,4 +43,4 @@
         "isSlider": false,
         "link": ""
     }
-]
+}

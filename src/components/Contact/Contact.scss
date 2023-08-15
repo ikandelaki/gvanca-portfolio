@@ -1,0 +1,38 @@
+.Contact {
+    height: 100%;
+    margin-top: 240px;
+
+    &-Title {
+        color: #10272F;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &-Details {
+        margin-top: 200px;
+        
+        h3 {
+            color: #10272F;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        p {
+            color: #10272F;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 40px;
+        }
+
+        &-Block {
+            display: flex;
+            gap: 32px;
+            margin-top: 24px;
+        }
+    }
+}

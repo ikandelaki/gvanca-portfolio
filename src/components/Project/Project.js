@@ -1,19 +1,18 @@
 function Project(props) {
-  const { name, description, images, isSlider, link, thumbnail } = props;
+  const { name, description, images } = props;
 
   function renderImages() {
     return (
       <div className="Project-Images">
-        {images.map((image) => {
-          return <img src={require(`../../images/${image}`)} alt="project" />;
+        {images.map((image, key) => {
+          return <img src={require(`../../images/${image}`)} alt="project" key={`${key}-image`} />;
         })}
       </div>
     );
   }
 
-  console.log(props);
   return (
-    <div className="Project" key={name}>
+    <div className="Project">
       <h3 className="Project-Title">{name}</h3>
       <p className="Project-Description">{description}</p>
       {renderImages()}

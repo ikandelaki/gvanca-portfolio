@@ -1,5 +1,7 @@
+import Projects from '../../components/Projects/Projects';
+
 function ProjectsRouter() {
-  return <div>ProjectsRouter</div>;
+  return <div><Projects /></div>;
 }
 
 export default ProjectsRouter;

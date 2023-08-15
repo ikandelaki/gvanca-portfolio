@@ -1,5 +1,7 @@
+import Contact from '../../components/Contact/Contact';
+
 function ContactRouter() {
-  return <div>ContactRouter</div>;
+  return <Contact/>;
 }
 
 export default ContactRouter;

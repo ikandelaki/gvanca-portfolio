@@ -24,21 +24,21 @@ function Header() {
         <div className="Header-Nav-Links">
           <Link 
             to="/resume" 
-            className={`${route === 'resume' ? 'active' : null}`}
+            className={`${route === 'resume' ? 'active' : ''}`}
             onClick={() => setRoute('resume')}
           >
             Resume
           </Link>
           <Link 
             to="/contact" 
-            className={`${route === 'contact' ? 'active' : null}`}
+            className={`${route === 'contact' ? 'active' : ''}`}
             onClick={() => setRoute('contact')}
           >
             Contact
           </Link>
           <Link 
             to="/projects" 
-            className={`${route === 'projects' ? 'active' : null}`}
+            className={`${route === 'projects' ? 'active' : ''}`}
             onClick={() => setRoute('projects')}
           >
             Projects

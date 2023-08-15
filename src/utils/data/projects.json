@@ -10,12 +10,17 @@
             "instagram-3.png",
             "instagram-4.png"
         ],
+        "pdpImages": [
+            "instagram-1.png",
+            "instagram-3.png",
+            "instagram-7.png"
+        ],
         "isSlider": false,
-        "paragraphs": {
-            "goal": "I embarked on the recreation of the Instagram app using Figma, driven by a sincere commitment to advancing my proficiency in UI/UX design. By meticulously dissecting and reconstructing the intricacies of this renowned application, I obtained practical insights into optimizing user interfaces and streamlining user experiences. This undertaking reflects my resolute dedication to continuous learning and the earnest application of acquired skills in the realm of contemporary app design.",
-            "milestones": "Developing this app was a true challenge, and I'm especially proud of handcrafting a customized chat theme. The learning process was invaluable, and I believe the end result reflects my commitment to a polished user experience. Overcoming these challenges has significantly contributed to my growth as a developer, and I look forward to sharing my journey to inspire others in the community. Embracing obstacles as opportunities, I'm excited to continue advancing in my app development journey.",
-            "empty": ""
-        },
+        "paragraphs": [
+            "I embarked on the recreation of the Instagram app using Figma, driven by a sincere commitment to advancing my proficiency in UI/UX design. By meticulously dissecting and reconstructing the intricacies of this renowned application, I obtained practical insights into optimizing user interfaces and streamlining user experiences. This undertaking reflects my resolute dedication to continuous learning and the earnest application of acquired skills in the realm of contemporary app design.",
+            "Developing this app was a true challenge, and I'm especially proud of handcrafting a customized chat theme. The learning process was invaluable, and I believe the end result reflects my commitment to a polished user experience. Overcoming these challenges has significantly contributed to my growth as a developer, and I look forward to sharing my journey to inspire others in the community. Embracing obstacles as opportunities, I'm excited to continue advancing in my app development journey. <br /> I also invested time in crafting mockups and personally creating various essential elements and symbols from scratch. This hands-on approach significantly enhanced the development process. Mockups helped streamline the app's layout and design, ensuring alignment with my vision. Additionally, crafting elements manually added a unique and cohesive visual aspect to the app, contributing to a polished user experience. The skills acquired through these efforts have enriched my development proficiency and deepened my understanding of design principles.",
+            "I also had a blast working on animations! They're a standout feature in the app, adding a cool dynamic vibe to the user interface. These animations aren't just for looks – they make the app easier to use with smooth transitions and interactive elements that give the whole experience a fun boost."
+        ],
         "link": ""
     },
     "clothing-brand": {
@@ -26,7 +31,17 @@
         "images": [
             "clothing-1.png"
         ],
+        "pdpImages": [
+            "clothing-1.png",
+            "clothing-2.png",
+            "clothing-3.png"
+        ],
         "isSlider": true,
+        "paragraphs": [
+            "The genesis of the Luxurious Clothing Website stems from a deep-rooted affinity for the fashion industry, a sense of personal connection, and a profound appreciation for minimalist aesthetics. Motivated by these factors, I embarked on a creative journey to bring my passions to life in a digital space.",
+            "While working on my other website project, I made accuracy and a clean, modern design my primary objectives. I ensured that the content was precise and up-to-date, aiming to build trust with users. The design followed a simple yet contemporary approach, focusing on user-friendliness and aesthetics. This project taught me the delicate balance between accuracy and design.",
+            "I strived to uphold a clean and straightforward design while also making it visually captivating. This is why I integrated hovering animations. These animations serve to maintain simplicity while effectively presenting all essential photos and information. By incorporating these animations, I ensured that users can access additional details seamlessly, enhancing the user experience without compromising the minimalist design."
+        ],
         "link": ""
     },
     "wendys-dunkin": {
@@ -40,7 +55,17 @@
             "dunkin-3.png",
             "dunkin-4.png"
         ],
+        "pdpImages": [
+            "dunkin-1.png",
+            "dunkin-5.png",
+            "dunkin-6.png"
+        ],
         "isSlider": false,
+        "paragraphs": [
+            "The initial app prototype I developed was for the Wendy's/Dunkin' mobile application. This marked my inaugural project in this domain, a fact evident in both the design and animation aspects. Despite the discernible learning curve reflected in the designs and animations, I take great pride in this endeavor.",
+            "As my first project, it exhibits a certain level of simplicity. Yet, the animations within it hold substantial importance. I exerted considerable effort and encountered difficulties, particularly with the initial opening animation. This process has provided a pivotal learning experience within my trajectory.",
+            "In my assessment, this stands as the most user-friendly app I have crafted thus far"
+        ],
         "link": ""
     }
 }

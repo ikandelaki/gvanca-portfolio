@@ -6,7 +6,7 @@ import ContactRouter from "../../routes/ContactRouter/ContactRouter";
 import ProjectsRouter from "../../routes/ProjectsRouter/ProjectsRouter";
 import ProjectDetailsRouter from "../../routes/ProjectDetailsRouter/ProjectDetailsRouter";
 import Footer from '../Footer/Footer';
-import { useState, createContext } from "react";
+import { useState, createContext, useEffect } from "react";
 
 export const RouteContext = createContext(null);
 export const ThemeContext = createContext(null);
@@ -15,8 +15,17 @@ function App() {
   const [route, setRoute] = useState("/");
   const [darkTheme, setDarkTheme] = useState(false);
 
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme) {
+      setDarkTheme(savedTheme === 'true' ? true : false);
+    }
+  }, []);
+
   function toggleTheme() {
     setDarkTheme(!darkTheme);
+    localStorage.setItem('theme', !darkTheme);
   }
 
   return (

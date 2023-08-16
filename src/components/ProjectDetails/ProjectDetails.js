@@ -21,7 +21,7 @@ function ProjectDetails(props) {
     return (
         <div className="ProjectDetails">
             <Link to="/projects" className="ProjectDetails-BackBtn">
-                <img src={darkTheme ? BackArrowDark : BackArrow} /> Projects
+                <img src={darkTheme ? BackArrowDark : BackArrow} alt="backArrow" /> Projects
             </Link>
             <h2 className="ProjectDetails-Title">{name}</h2>
             <div className="ProjectDetails-Content">

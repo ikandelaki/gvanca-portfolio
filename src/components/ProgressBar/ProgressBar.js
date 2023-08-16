@@ -36,7 +36,7 @@ function ProgressBar() {
     <div className="ProgressBar">
       <div className="ProgressBar-Line"></div>
       <div className="ProgressBar-Star" ref={starRef}>
-        <img src={darkTheme ? StarDark : Star} />
+        <img src={darkTheme ? StarDark : Star} alt="star" />
       </div>
     </div>
   );

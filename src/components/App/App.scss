@@ -16,4 +16,115 @@
     margin: 0 auto;
     padding: 24px 0px;
   }
+
+  &.dark {
+    background-color: $background-color_dark;
+
+    h1, h2, h3, p {
+      color: $base-color_dark;
+    }
+
+    .Header {
+      &-Nav {
+        &-Mode {
+          &-Btn {
+            background-color: #fff;
+            
+            &::after {
+              background-color: #F5B102;
+              transform: translateX(100%);
+            }
+          }
+        }
+
+        &-Links {
+          a {
+            color: $base-color_dark; 
+
+            &::after {
+              background-color: $base-color_dark;
+            }
+          }
+        }
+      }
+
+      &-Logo {
+        span {
+          color: $base-color_dark;
+        }
+      }
+    }
+
+    .ProjectBanner {
+      background-color: $pink-color_dark;
+
+      &-Title {
+        color: $background-color_dark;
+      }
+    }
+
+    .Footer {
+      &-Banner {
+        background-color: $pink-color_dark;
+      }
+    }
+
+    .Resume {
+      &-Name {
+        color: $base-color_dark;
+      }
+
+      &-Details {
+        li {
+          color: $base-color_dark;
+        }
+      }
+    }
+
+    .ProjectDetails {
+      &-BackBtn {
+        color: $base-color_dark;
+
+        &::after {
+          background-color: $base-color_dark;
+        }
+      }
+
+      &-Content {
+        img {
+          border-radius: 30px;
+        }
+
+        a {
+          color: $base-color_dark;
+
+          &::after {
+            background-color: $base-color_dark;
+          }
+        }
+      }
+    }
+
+    .ProjectCard {
+      &-Title {
+        &::after {
+          background-color: $base-color_dark;
+        }
+      }
+
+      &-Thumbnail {
+        img {
+          border-radius: 30px;
+        }
+      }
+    }
+
+    .Project {
+      &-Title {
+        &::after {
+          background-color: $base-color_dark;
+        }
+      }
+    }
+  }
 }

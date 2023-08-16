@@ -20,7 +20,7 @@
       letter-spacing: -0.6px;
 
       &:last-of-type {
-        margin-left: -2px;
+        margin-left: -6px;
       }
     }
 
@@ -41,7 +41,7 @@
       gap: 68px;
 
       a {
-        color: #10272f;
+        color: $base-color;
         font-family: Inter;
         font-size: 15px;
         font-style: normal;
@@ -54,10 +54,10 @@
 
         &.active {
           text-shadow:
-          -0.1px -0.1px 0 #10272f,
-          0.1px -0.1px 0 #10272f,
-          -0.1px 0.1px 0 #10272f,
-          0.1px 0.1px 0 #10272f;
+          -0.1px -0.1px 0 $base-color,
+          0.1px -0.1px 0 $base-color,
+          -0.1px 0.1px 0 $base-color,
+          0.1px 0.1px 0 $base-color;
           -webkit-transition: all .5s;
           -moz-transition: all .5s;
           -o-transition: all .5s;
@@ -69,7 +69,7 @@
           display: block;
           width: 100%;
           height: 1px;
-          transform: translateX(-100%);
+          transform: translateX(-102%);
           transition: all 0.3s;
           background-color: $base-color;
         }
@@ -90,6 +90,7 @@
         height: 31px;
         border-radius: 16px;
         border: 1px solid $base-color;
+        cursor: pointer;
 
         &::after {
           content: "";
@@ -99,7 +100,6 @@
           height: 30px;
           background-color: $base-color;
           border-radius: 50%;
-          cursor: pointer;
           transition: all 0.3s;
         }
       }

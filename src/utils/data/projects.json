@@ -21,7 +21,7 @@
             "Developing this app was a true challenge, and I'm especially proud of handcrafting a customized chat theme. The learning process was invaluable, and I believe the end result reflects my commitment to a polished user experience. Overcoming these challenges has significantly contributed to my growth as a developer, and I look forward to sharing my journey to inspire others in the community. Embracing obstacles as opportunities, I'm excited to continue advancing in my app development journey. <br /> I also invested time in crafting mockups and personally creating various essential elements and symbols from scratch. This hands-on approach significantly enhanced the development process. Mockups helped streamline the app's layout and design, ensuring alignment with my vision. Additionally, crafting elements manually added a unique and cohesive visual aspect to the app, contributing to a polished user experience. The skills acquired through these efforts have enriched my development proficiency and deepened my understanding of design principles.",
             "I also had a blast working on animations! They're a standout feature in the app, adding a cool dynamic vibe to the user interface. These animations aren't just for looks – they make the app easier to use with smooth transitions and interactive elements that give the whole experience a fun boost."
         ],
-        "link": ""
+        "link": "https://www.figma.com/proto/7IeO07kfcknLYYFoxoyNbt?node-id=224-2&starting-point-node-id=224:2&locale=en"
     },
     "clothing-brand": {
         "id": "clothing-brand",
@@ -29,7 +29,13 @@
         "description": "The genesis of the Luxurious Clothing Website stems from a deep-rooted affinity for the fashion industry, a sense of personal connection, and a profound appreciation for minimalist aesthetics. Motivated by these factors, I embarked on a creative journey to bring my passions to life in a digital space.",
         "thumbnail": "clothing-1.png",
         "images": [
-            "clothing-1.png"
+            "clothing-1.png",
+            "clothing-4.png",
+            "clothing-5.png",
+            "clothing-6.png",
+            "clothing-7.png",
+            "clothing-8.png",
+            "clothing-9.png"
         ],
         "pdpImages": [
             "clothing-1.png",
@@ -42,7 +48,7 @@
             "While working on my other website project, I made accuracy and a clean, modern design my primary objectives. I ensured that the content was precise and up-to-date, aiming to build trust with users. The design followed a simple yet contemporary approach, focusing on user-friendliness and aesthetics. This project taught me the delicate balance between accuracy and design.",
             "I strived to uphold a clean and straightforward design while also making it visually captivating. This is why I integrated hovering animations. These animations serve to maintain simplicity while effectively presenting all essential photos and information. By incorporating these animations, I ensured that users can access additional details seamlessly, enhancing the user experience without compromising the minimalist design."
         ],
-        "link": ""
+        "link": "https://www.figma.com/proto/iyXhXFbPmCq1iSXbBQhFH8?node-id=52-2&starting-point-node-id=52:2&locale=en"
     },
     "wendys-dunkin": {
         "id": "wendys-dunkin",
@@ -66,6 +72,6 @@
             "As my first project, it exhibits a certain level of simplicity. Yet, the animations within it hold substantial importance. I exerted considerable effort and encountered difficulties, particularly with the initial opening animation. This process has provided a pivotal learning experience within my trajectory.",
             "In my assessment, this stands as the most user-friendly app I have crafted thus far"
         ],
-        "link": ""
+        "link": "https://www.figma.com/proto/qtFn6b9rwyYsDB8dbeXfNI?node-id=6-1644&starting-point-node-id=3:15&locale=en"
     }
 }

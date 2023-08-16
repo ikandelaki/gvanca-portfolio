@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { RouteContext } from "../App/App";
 
-function Header() {
+function Header(props) {
   const { route, setRoute } = useContext(RouteContext);
+  const { toggleTheme } = props;
 
   function renderLogo() {
     return (
@@ -22,6 +23,13 @@ function Header() {
     return (
       <div className="Header-Nav">
         <div className="Header-Nav-Links">
+          <Link 
+            to="/" 
+            className={`${route === '/' ? 'active' : ''}`}
+            onClick={() => setRoute('/')}
+          >
+            Home
+          </Link>
           <Link 
             to="/resume" 
             className={`${route === 'resume' ? 'active' : ''}`}
@@ -52,7 +60,7 @@ function Header() {
   function renderModeButton() {
     return (
       <div className="Header-Nav-Mode">
-        <div className="Header-Nav-Mode-Btn"></div>
+        <div className="Header-Nav-Mode-Btn" onClick={toggleTheme}></div>
       </div>
     );
   }

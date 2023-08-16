@@ -9,26 +9,34 @@ import Footer from '../Footer/Footer';
 import { useState, createContext } from "react";
 
 export const RouteContext = createContext(null);
+export const ThemeContext = createContext(null);
 
 function App() {
   const [route, setRoute] = useState("/");
+  const [darkTheme, setDarkTheme] = useState(false);
+
+  function toggleTheme() {
+    setDarkTheme(!darkTheme);
+  }
 
   return (
-    <RouteContext.Provider value={{route, setRoute}}>
-      <div className="App">
-        <div className="App-Container">
-          <Header />
-          <Routes>
-            <Route path="/" element={<HomeRouter />} />
-            <Route path="/resume" element={<ResumeRouter />} />
-            <Route path="/contact" element={<ContactRouter />} />
-            <Route path="/projects" element={<ProjectsRouter />} />
-            <Route path="/projects/:id" element={<ProjectDetailsRouter />} />
-          </Routes>
+    <ThemeContext.Provider value={{darkTheme}}>
+      <RouteContext.Provider value={{route, setRoute}}>
+        <div className={`App ${darkTheme ? 'dark' : ''}`}>
+          <div className="App-Container">
+            <Header toggleTheme={toggleTheme} />
+            <Routes>
+              <Route path="/" element={<HomeRouter />} />
+              <Route path="/resume" element={<ResumeRouter />} />
+              <Route path="/contact" element={<ContactRouter />} />
+              <Route path="/projects" element={<ProjectsRouter />} />
+              <Route path="/projects/:id" element={<ProjectDetailsRouter />} />
+            </Routes>
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
-    </RouteContext.Provider>
+      </RouteContext.Provider>
+    </ThemeContext.Provider>
   );
 }
 

@@ -31,5 +31,42 @@
     margin-top: 38px;
     display: flex;
     justify-content: space-evenly;
+
+    img {
+      border-radius: 30px;
+    }
+  }
+
+  &-Slider {
+    margin-top: 30px;
+
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+    color: black;
+    margin-top: 12px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      transform: translateX(-100%);
+      transition: all 0.3s;
+      background-color: $base-color;
+    }
+
+    &:hover {
+      &::after {
+        transform: translateX(0);
+      }
+    }
   }
 }
+

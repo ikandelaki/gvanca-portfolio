@@ -5,7 +5,6 @@ function Footer() {
     const { route } = useContext(RouteContext);
 
     function renderFooterText() {
-        console.log(route);
         if (route === 'resume' || route === 'contact') return null;
 
         return (

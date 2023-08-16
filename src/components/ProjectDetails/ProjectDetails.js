@@ -1,8 +1,14 @@
 import projectData from '../../utils/data/projects.json';
 import { Link } from 'react-router-dom';
 import BackArrow from "../../icons/back-arrow.svg";
+import BackArrowDark from "../../icons/back-arrow-dark.svg";
+import { useContext } from "react";
+import { ThemeContext } from "../App/App";
+
 
 function ProjectDetails(props) {
+    const { darkTheme } = useContext(ThemeContext);
+
     const data = projectData[props.id];
 
     const {
@@ -15,7 +21,7 @@ function ProjectDetails(props) {
     return (
         <div className="ProjectDetails">
             <Link to="/projects" className="ProjectDetails-BackBtn">
-                <img src={BackArrow} /> Projects
+                <img src={darkTheme ? BackArrowDark : BackArrow} /> Projects
             </Link>
             <h2 className="ProjectDetails-Title">{name}</h2>
             <div className="ProjectDetails-Content">
@@ -26,7 +32,7 @@ function ProjectDetails(props) {
                     </div>
                     <div>
                         <img src={require(`../../images/${pdpImages[0]}`)} alt="" />
-                        <Link to={link}>Click to open a prototype</Link>
+                        <Link to={link} target="_blank">Click to open a prototype</Link>
                     </div>
                 </div>
                 <div className="ProjectDetails-Content-Box ProjectDetails-Content-Milestones">

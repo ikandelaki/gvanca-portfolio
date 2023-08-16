@@ -1,7 +1,16 @@
 .ProgressBar {
+  position: relative;
+
   &-Line {
     width: 1px;
     height: 100%;
     background-color: $progress-bar-color;
+  }
+
+  &-Star {
+    position: absolute;
+    top: 0;
+    left: -12px;
+    height: 25px;
   }
 }

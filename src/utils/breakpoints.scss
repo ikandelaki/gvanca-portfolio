@@ -1,3 +1,9 @@
+@media (max-width: 1440px) {
+    .Home {
+        padding: 0 16px;
+    }
+}
+
 @media (max-width: 1024px) {
     .App {
         &.dark {
@@ -302,6 +308,7 @@
     .Footer {
         &-Banner {
             margin-top: 11px;
+            height: 89px;
 
             &-Copyright {
                 padding: 0 16px;

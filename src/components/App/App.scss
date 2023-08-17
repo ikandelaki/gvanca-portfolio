@@ -5,6 +5,14 @@
   font-family: Inter, "sans-serif";
 }
 
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .App {
   min-height: 100vh;
   display: flex;

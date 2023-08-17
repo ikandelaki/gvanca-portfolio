@@ -17,7 +17,7 @@ function Project(props) {
   }
 
   function renderImages() {
-    if (isSlider) {
+    if (isSlider && window.innerWidth > 1024) {
       const settings = {
         dots: true,
         infinite: true,
@@ -42,7 +42,11 @@ function Project(props) {
     return (
       <div className="Project-Images">
         {images.map((image, key) => {
-          return <img src={require(`../../images/${image}`)} alt="project" key={`${key}-image`} />;
+          return (
+            <Link to={`/projects/${id}`} onClick={() => handleProjectClick()} key={`${key}-image`}>
+              <img src={require(`../../images/${image}`)} alt="project" />
+            </Link>
+          );
         })}
       </div>
     );
@@ -50,9 +54,9 @@ function Project(props) {
 
   return (
     <div className="Project">
-      <h3 className="Project-Title">{name}</h3>
+      <h3 className="Project-Title"><Link to={`/projects/${id}`} onClick={() => handleProjectClick()}>{name}</Link></h3>
       <p className="Project-Description">{description}</p>
-      <Link to={`/projects/${id}`} onClick={() => handleProjectClick()}>Project details &rarr;</Link>
+      <Link to={`/projects/${id}`} onClick={() => handleProjectClick()} className="Project-Link-Details">Project details &rarr;</Link>
       {renderImages()}
     </div>
   );

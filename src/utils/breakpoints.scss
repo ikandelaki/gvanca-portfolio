@@ -1,0 +1,324 @@
+@media (max-width: 1024px) {
+    .App {
+        &.dark {
+            .Header-Nav-Links {
+                a {
+                    color: $base-color;
+                }
+            }
+        }
+
+        &-Container {
+            padding: 0;
+        }
+    }
+
+    .Header {
+        padding: 24px 16px 0;
+        position: relative;
+
+        &-Logo {
+            span {
+                font-size: 25px;
+            }
+        }
+
+        &-Projects {
+            &-Link {
+                display: none;
+            }
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            margin-top: 3px;
+            background-color: #10272f;
+            opacity: 0.3;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
+
+        &-Nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.87);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+
+            transform: translateX(100%);
+            opacity: 0;
+            pointer-events: none;
+            visibility: hidden;
+
+            transition: all 0.5s ease-in;
+
+            &.open {
+                opacity: 1;
+                pointer-events: auto;
+                visibility: visible;
+
+                transform: translateX(0%);
+            }
+
+            &-Links {
+                flex-direction: column;
+                gap: 45px;
+            }
+        }
+
+        &-Burger-Menu {
+            display: block;
+            
+            img {
+                &.open {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .ProgressBar {
+        display: none;
+    }
+
+    .Home {
+        padding: 0 16px;
+        margin-top: 40px;
+    }
+
+    .Project {
+        &-Title {
+            display: block;
+            width: max-content;
+            margin: 0 auto;
+            font-size: 20px;
+        }
+
+        a.Project-Link-Details {
+            display: none;
+        }
+
+        &-Description {
+            display: none;
+        }
+
+        &-Images {
+            a {
+                &:not(:first-child) {
+                    display: none;
+               }
+            }  
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &-Slider {
+            display: none;
+        }
+    }
+
+    .ProjectDetails {
+        padding: 16px;
+
+        h2 {
+            width: auto;
+            font-size: 20px;
+            margin-top: 33px;
+
+            &::after {
+                margin-top: 16px;
+            }
+        }
+
+        &-Content {
+            gap: 65px;
+
+            &-Box {
+                flex-direction: column;
+                gap: 35px;
+
+                h3 {
+                    margin-top: 32px;
+                    font-size: 15px;
+                }
+
+                p {
+                    margin-top: 16px;
+                    font-size: 10px;
+                }
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        &-BackBtn {
+            font-size: 20px;
+
+            img {
+                width: 9px;
+                height: 14px;
+            }
+        }
+    }
+
+    .Contact {
+        margin-top: 94px;
+
+        &-Title {
+            padding: 0 16px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        &-Details {
+            padding: 0 16px;
+            margin-top: 98px;
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .ProjectBanner {
+        margin-top: 30px;
+        height: 100px;
+
+        &-Title {
+            font-size: 40px;
+        }
+    }
+
+    .Hero {
+        &-Projects {
+            margin-top: 33px;
+            gap: 65px;
+        }
+
+        &-Heading {
+            &-Title {
+                font-size: 40px;
+            }
+
+            &-Description {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .Resume {
+        padding: 0 16px;
+
+        &-Name {
+            display: none;
+
+            &-Mobile {
+                display: block;
+                margin: 0 auto 80px;
+                color: $base-color;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: -0.4px;
+            }
+        }
+
+        &-Details {
+            flex-direction: column;
+            gap: 30px;
+
+            &-Right,
+            &-Left {
+                gap: 30px;
+            }
+
+            &-Image {
+                width: 100%;
+                position: relative;
+
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    position: relative;
+                    z-index: 2;
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    background: $base-color;
+                    width: 100%;
+                    height: 100px;
+                    position: absolute;
+                    z-index: 1;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                }
+            }
+
+            &-Title {
+                font-size: 15px;
+            }
+
+            &-Bullet_Points {
+                font-size: 15px;
+            }
+
+            &-Description {
+                font-size: 15px;
+            }
+
+            &-Education-Details {
+                p {
+                    font-size: 10px;
+                }
+            }
+
+            &-Experience {
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .Footer {
+        &-Banner {
+            margin-top: 11px;
+
+            &-Copyright {
+                padding: 0 16px;
+                font-size: 10px;
+            }
+        }
+
+        &-Contact {
+            p {
+                &:first-child {
+                    font-size: 15px;
+                }
+
+                &:last-child {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

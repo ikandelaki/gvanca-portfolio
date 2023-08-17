@@ -1,6 +1,9 @@
 .ProjectCard {
     transition: all 0.3s;
-    width: max-content;
+
+    img {
+        max-width: 100%;
+    }
 
     &-Link {
         text-decoration: none;

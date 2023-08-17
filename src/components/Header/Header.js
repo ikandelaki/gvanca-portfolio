@@ -1,10 +1,15 @@
 import LogoSpark from "../../icons/logo-spark.svg";
+import BurgerMenu from "../../icons/burger-menu.svg";
+import BurgerMenuDark from "../../icons/burger-menu-dark.svg";
+import XCloseMenu from "../../icons/x-close-menu.svg";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { RouteContext } from "../App/App";
+import { useContext, useState } from "react";
+import { RouteContext, ThemeContext } from "../App/App";
 
 function Header(props) {
   const { route, setRoute } = useContext(RouteContext);
+  const { darkTheme } = useContext(ThemeContext)
+  const [ openMobileMenu, setOpenMobileMenu ] = useState(false);
   const { toggleTheme } = props;
 
   function renderLogo() {
@@ -19,40 +24,54 @@ function Header(props) {
     );
   }
 
+  function handleNavLinkClick(route) {
+    setRoute(route);
+    setOpenMobileMenu(false);
+  }
+
   function renderNavigation() {
     return (
-      <div className="Header-Nav">
-        <div className="Header-Nav-Links">
-          <Link 
-            to="/" 
-            className={`${route === '/' ? 'active' : ''}`}
-            onClick={() => setRoute('/')}
-          >
-            Home
-          </Link>
-          <Link 
-            to="/resume" 
-            className={`${route === 'resume' ? 'active' : ''}`}
-            onClick={() => setRoute('resume')}
-          >
-            Resume
-          </Link>
-          <Link 
-            to="/contact" 
-            className={`${route === 'contact' ? 'active' : ''}`}
-            onClick={() => setRoute('contact')}
-          >
-            Contact
-          </Link>
-          <Link 
-            to="/projects" 
-            className={`${route === 'projects' ? 'active' : ''}`}
-            onClick={() => setRoute('projects')}
-          >
-            Projects
-          </Link>
+      <div className="Header-Nav-Container">
+        <div className={`Header-Nav ${ openMobileMenu ? 'open' : ''}`}>
+          <div className="Header-Nav-Links">
+            <Link 
+              to="/" 
+              className={`${route === '/' ? 'active' : ''}`}
+              onClick={() => handleNavLinkClick('/')}
+            >
+              Home
+            </Link>
+            <Link 
+              to="/resume" 
+              className={`${route === 'resume' ? 'active' : ''}`}
+              onClick={() => handleNavLinkClick('resume')}
+            >
+              Resume
+            </Link>
+            <Link 
+              to="/contact" 
+              className={`${route === 'contact' ? 'active' : ''}`}
+              onClick={() => handleNavLinkClick('contact')}
+            >
+              Contact
+            </Link>
+            <Link 
+              to="/projects" 
+              className={`Header-Projects-Link ${route === 'projects' ? 'active' : ''}`}
+              onClick={() => handleNavLinkClick('projects')}
+            >
+              Projects
+            </Link>
+          </div>
+          {renderModeButton()}
         </div>
-        {renderModeButton()}
+        <div 
+          className="Header-Burger-Menu"
+          onClick={() => setOpenMobileMenu(!openMobileMenu)}
+        >
+          <img src={darkTheme ? BurgerMenuDark : BurgerMenu} alt="burger-menu" className={!openMobileMenu ? 'open' : ''} />
+          <img src={XCloseMenu} alt="burger-menu" className={openMobileMenu ? 'open' : ''} />
+        </div>
       </div>
     );
   }

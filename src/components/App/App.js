@@ -10,10 +10,12 @@ import { useState, createContext, useEffect } from "react";
 
 export const RouteContext = createContext(null);
 export const ThemeContext = createContext(null);
+export const ProjectContext = createContext(null);
 
 function App() {
   const [route, setRoute] = useState("/");
   const [darkTheme, setDarkTheme] = useState(false);
+  const [selectedProjectId, setSelectedProjectId] = useState('');
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -29,23 +31,25 @@ function App() {
   }
 
   return (
-    <ThemeContext.Provider value={{darkTheme}}>
-      <RouteContext.Provider value={{route, setRoute}}>
-        <div className={`App ${darkTheme ? 'dark' : ''}`}>
-          <div className="App-Container">
-            <Header toggleTheme={toggleTheme} />
-            <Routes>
-              <Route path="/" element={<HomeRouter />} />
-              <Route path="/resume" element={<ResumeRouter />} />
-              <Route path="/contact" element={<ContactRouter />} />
-              <Route path="/projects" element={<ProjectsRouter />} />
-              <Route path="/projects/:id" element={<ProjectDetailsRouter />} />
-            </Routes>
+    <ProjectContext.Provider value={{selectedProjectId, setSelectedProjectId}}>
+      <ThemeContext.Provider value={{darkTheme}}>
+        <RouteContext.Provider value={{route, setRoute}}>
+          <div className={`App ${darkTheme ? 'dark' : ''}`}>
+            <div className="App-Container">
+              <Header toggleTheme={toggleTheme} />
+              <Routes>
+                <Route path="/" element={<HomeRouter />} />
+                <Route path="/resume" element={<ResumeRouter />} />
+                <Route path="/contact" element={<ContactRouter />} />
+                <Route path="/projects" element={<ProjectsRouter />} />
+                <Route path="/projects/:id" element={<ProjectDetailsRouter />} />
+              </Routes>
+            </div>
+            <Footer />
           </div>
-          <Footer />
-        </div>
-      </RouteContext.Provider>
-    </ThemeContext.Provider>
+        </RouteContext.Provider>
+      </ThemeContext.Provider>
+    </ProjectContext.Provider>
   );
 }
 

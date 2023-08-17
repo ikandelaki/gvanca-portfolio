@@ -31,7 +31,7 @@
     <script>
       // Immediately set body class based on localStorage
       const savedTheme = localStorage.getItem('theme');
-      document.querySelector('.App').classList.add(savedTheme === 'true' ? 'dark' : ''); // 'light' is the default if no theme is found in localStorage
+      document.querySelector('.App')?.classList.add(savedTheme === 'true' ? 'dark' : ''); // 'light' is the default if no theme is found in localStorage
     </script>
   </head>
   <body>

@@ -66,15 +66,26 @@
     .Footer {
       &-Banner {
         background-color: $pink-color_dark;
+
+        &-Copyright {
+          color: #fff;
+        }
       }
     }
 
     .Resume {
-      &-Name {
+      &-Name,
+      &-Name-Mobile {
         color: $base-color_dark;
       }
 
       &-Details {
+        &-Image {
+          &::after {
+            background-color: $pink-color_dark;
+          }
+        }
+
         li {
           color: $base-color_dark;
         }
@@ -121,8 +132,24 @@
 
     .Project {
       &-Title {
+        a {
+          color: $base-color_dark;
+
+          &::after {
+            display: none;
+          }
+        }
+
         &::after {
           background-color: $base-color_dark;
+        }
+      }
+
+      a {
+        color: $base-color_dark;
+
+        &::after {
+          color: $base-color_dark;
         }
       }
     }

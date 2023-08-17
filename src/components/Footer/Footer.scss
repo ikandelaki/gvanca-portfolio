@@ -31,5 +31,17 @@
         margin-top: 30px;
         height: 124px;
         background-color: $base-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-Copyright {
+            color: #FFF;
+            text-align: center;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 200;
+            line-height: normal;
+        }
     }
 }

@@ -1,10 +1,15 @@
 .Resume {
-  &-Name {
+  &-Name,
+  &-Name-Mobile {
     color: $base-color;
     font-size: 50px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+  }
+
+  &-Name-Mobile {
+    display: none;
   }
 
   &-Details {

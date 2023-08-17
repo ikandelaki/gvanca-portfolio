@@ -105,4 +105,16 @@
       }
     }
   }
+
+  &-Burger-Menu {
+    display: none;
+
+    img {
+      position: relative;
+      display: none;
+      width: 24px;
+      height: 24px;
+      z-index: 9999;
+    }
+  }
 }

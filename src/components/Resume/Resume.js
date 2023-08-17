@@ -7,6 +7,7 @@ function Resume() {
           <div className="Resume-Details-Image">
             <img src={require("../../images/gvanca.png")} alt="pfp" />
           </div>
+          <div className="Resume-Name-Mobile">Gvantsa MAMUKASHVILI</div>
           <div className="Resume-Detail Resume-Details-Contact">
             <h3 className="Resume-Details-Title">Contact</h3>
             <p className="Resume-Details-Bullet_Points">+995 598 360 705</p>
